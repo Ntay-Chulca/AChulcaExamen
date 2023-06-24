@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AChulcaExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen Parcial 1" FontSize="24" HorizontalTextAlignment="Center" TextColor="Gray" HorizontalOptions="CenterAndExpand"/>
+
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="200"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO:" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUser"  Placeholder="Ingrese el usuraio" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="CONTRASEÑA:" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtPassword"  Placeholder="Ingrese la contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+         
+            </Grid>
+
+            <Button x:Name="btnLogin" Text="Iniciar Sesión" Grid.Row="2" Grid.Column="0" Clicked="btnLogin_Clicked" HorizontalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
